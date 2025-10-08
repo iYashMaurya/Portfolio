@@ -1,0 +1,411 @@
+<!-- New Code -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Yash Maurya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Work Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Yash Maurya</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Work Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Yash Maurya profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yash Maurya</h1>
+        <p class="section__text__p2">Java, Data Analytics, Machine Learning</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/yash-maurya-374104231/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/iYashMaurya'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Enthusiast</h3>
+              <p>
+                Machine Learning <br />
+                Java <br />
+                Data Analytics
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.E in Information Science <br />
+                Final Year <br />8.26 CGPA
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate Java enthusiast with a strong background in data
+              analytics and machine learning. Currently, I am gearing up to
+              explore the exciting field of deep learning. As a seasoned team
+              lead, I excel in guiding teams towards achieving their goals and
+              fostering a collaborative environment. My insatiable curiosity
+              drives me to continuously delve deeper into technology, ensuring I
+              stay at the forefront of industry advancements. I thrive in team
+              settings, always eager to learn and contribute more, making me a
+              dedicated and proactive team player.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="experience-details-container">
+        <div class="work-experience-container">
+          <div class="work-item">
+            <div class="work-header">
+              <div class="work-title-container">
+                <h2 class="work-title">Software Developer</h2>
+                <h3 class="work-company">Apexon</h3>
+              </div>
+              <div class="work-details">
+                <span class="work-duration">January 2025 - Present</span>
+                <span class="work-location">Delhi, India</span>
+              </div>
+            </div>
+            <ul class="work-responsibilities">
+              <li>Developing and maintaining software applications</li>
+              <li>Collaborating with cross-functional teams</li>
+              <li>Contributing to development processes</li>
+              <li>Implementing best practices</li>
+            </ul>
+          </div>
+          
+          <div class="work-item">
+            <div class="work-header">
+              <div class="work-title-container">
+                <h2 class="work-title">Jr. Project Assistant</h2>
+                <h3 class="work-company">Central Library IIT Delhi</h3>
+              </div>
+              <div class="work-details">
+                <span class="work-duration">June 2024 - December 2024</span>
+                <span class="work-location">IIT Delhi, Delhi</span>
+              </div>
+            </div>
+            <ul class="work-responsibilities">
+              <li>Built a mobile library app enhancing services for 1000+ users</li>
+              <li>Developing mobile application using React Native</li>
+              <li>Building RESTful APIs with Node.js</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <!-- Updated Skills Section -->
+<!-- Updated Skills Section -->
+<section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="programming">Programming Languages</button>
+          <button class="filter-btn" data-filter="core">Core Concepts</button>
+          <button class="filter-btn" data-filter="backend">Backend Frameworks</button>
+          <button class="filter-btn" data-filter="api">API & Build Tools</button>
+          <button class="filter-btn" data-filter="messaging">Messaging & Streaming</button>
+          <button class="filter-btn" data-filter="devops">Development & Cloud Tools</button>
+          <button class="filter-btn" data-filter="database">Databases & Storage</button>
+        </div>
+        
+        <div class="skills-categories">
+          <!-- Categories will be dynamically rendered based on selected filter -->
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Inventory Management System
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/iYashMaurya/InventoryManagementSystem'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn learn-more-btn"
+                data-project="1"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>ā
+            <h2 class="experience-sub-title project-title">
+              DDoS Attack Classification
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/iYashMaurya/DDos-Attack-Classification/blob/main/Code/DDoS.ipynb'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn learn-more-btn"
+                data-project="2"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn learn-more-btn"
+                data-project="3"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:iyashmaurya@gmail.com">iyashmaurya@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/yash-maurya-374104231/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <!-- Project Detail Modals -->
+   <!-- Updated Project Modals -->
+<div id="project-modal-1" class="project-modal">
+  <div class="modal-content">
+    <h2>Inventory Management System</h2>
+    <p>
+      A comprehensive inventory management system designed to streamline operations for businesses.
+      This application provides real-time tracking of inventory levels, automated reordering,
+      and detailed reporting capabilities.
+    </p>
+    <h3>Technologies Used</h3>
+    <div class="tech-tags">
+      <span class="tech-tag">Java</span>
+      <span class="tech-tag">Spring Boot</span>
+      <span class="tech-tag">MySQL</span>
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">REST APIs</span>
+      <span class="tech-tag">Maven</span>
+      <span class="tech-tag">Docker</span>
+    </div>
+    <div class="modal-buttons">
+      <button
+        class="btn btn-color-2"
+        onclick="location.href='https://github.com/iYashMaurya/InventoryManagementSystem'"
+      >
+        View Code
+      </button>
+      <button class="btn btn-color-1 close-modal">Close</button>
+    </div>
+  </div>
+</div>
+
+<div id="project-modal-2" class="project-modal">
+  <div class="modal-content">
+    <h2>DDoS Attack Classification</h2>
+    <p>
+      Advanced ML-based security solution that analyzes network traffic patterns to detect and classify various types of DDoS attacks.
+      Implements ensemble learning algorithms for high accuracy, real-time threat detection, and automated response mechanisms to protect infrastructure.
+    </p>
+    <h3>Technologies Used</h3>
+    <div class="tech-tags">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Machine Learning</span>
+      <span class="tech-tag">TensorFlow</span>
+      <span class="tech-tag">Data Analytics</span>
+      <span class="tech-tag">Network Security</span>
+      <span class="tech-tag">Scikit-learn</span>
+      <span class="tech-tag">Pandas</span>
+    </div>
+    <div class="modal-buttons">
+      <button
+        class="btn btn-color-2"
+        onclick="location.href='https://github.com/iYashMaurya/DDos-Attack-Classification/blob/main/Code/DDoS.ipynb'"
+      >
+        View Code
+      </button>
+      <button class="btn btn-color-1 close-modal">Close</button>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
