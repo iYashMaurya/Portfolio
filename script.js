@@ -13,11 +13,11 @@ const skillsData = {
   programming: {
     title: "Programming Languages",
     skills: [
-      { name: "C++", level: 4 },
+      { name: "C++", level: 2 },
       { name: "Java", level: 3 },
       { name: "Go", level: 2 },
       { name: "SQL", level: 3 },
-      { name: "JavaScript", level: 2 }
+      { name: "JavaScript", level: 3 }
     ]
   },
   core: {
@@ -25,7 +25,7 @@ const skillsData = {
     skills: [
       { name: "Multithreading", level: 3 },
       { name: "Design Patterns", level: 2 },
-      { name: "Microservices Architecture", level: 2 },
+      { name: "Microservices Architecture", level: 3 },
       { name: "RESTful API Design", level: 3 }
     ]
   },
@@ -34,7 +34,7 @@ const skillsData = {
     skills: [
       { name: "Spring Boot", level: 3 },
       { name: "Spring Framework", level: 3 },
-      { name: "Spring Data JPA", level: 2 },
+      { name: "Spring Data JPA", level: 3 },
       { name: "Spring Security", level: 2 },
       { name: "Go Fiber", level: 1 },
       { name: "gRPC", level: 2 }
@@ -47,23 +47,24 @@ const skillsData = {
       { name: "gRPC", level: 2 },
       { name: "Swagger (OpenAPI)", level: 2 },
       { name: "Postman", level: 3 },
-      { name: "Maven", level: 2 }
+      { name: "Maven", level: 3 },
+      {name: "WebSocket", level: 3}
     ]
   },
   messaging: {
     title: "Messaging & Streaming Systems",
     skills: [
-      { name: "Apache Kafka", level: 1 }
+      { name: "Apache Kafka", level: 3 }
     ]
   },
   devops: {
     title: "Development & Cloud Tools",
     skills: [
-      { name: "Docker", level: 2 },
-      { name: "Docker Compose", level: 2 },
+      { name: "Docker", level: 3 },
+      { name: "Docker Compose", level: 3 },
       { name: "Kubernetes (Basic)", level: 1 },
       { name: "Git", level: 3 },
-      { name: "JUnit 5", level: 2 },
+      { name: "JUnit 5", level: 3 },
       { name: "AWS (EC2, ECS)", level: 1 }
     ]
   },
@@ -72,8 +73,8 @@ const skillsData = {
     skills: [
       { name: "PostgreSQL", level: 3 },
       { name: "MySQL", level: 3 },
-      { name: "MongoDB", level: 2 },
-      { name: "Redis", level: 1 }
+      { name: "MongoDB", level: 3 },
+      { name: "Redis", level: 3 }
     ]
   }
 };
